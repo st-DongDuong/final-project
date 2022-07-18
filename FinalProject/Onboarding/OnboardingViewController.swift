@@ -26,7 +26,7 @@ final class OnboardingViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.lightGray.withAlphaComponent(2)
     }
 
-     @IBAction func nextButton(_ sender: Any) {
+    @IBAction func nextButton(_ sender: Any) {
         guard var currentIndex = collectionView.indexPathsForVisibleItems.first else { return }
         print(currentIndex)
         currentIndex.item += 1 // tn
@@ -37,8 +37,9 @@ final class OnboardingViewController: UIViewController {
         }
     }
 
-     @IBAction private func skipButtonTouchUpInside(_ sender: Any) {
-         #warning("Move to register later")
+    @IBAction private func skipButtonTouchUpInside(_ sender: Any) {
+        let registrationVC = RegistrationViewController()
+        navigationController?.pushViewController(registrationVC, animated: true)
     }
 
     private func configureCollection() {
@@ -61,12 +62,11 @@ extension OnboardingViewController: UICollectionViewDataSource {
                                                             for: indexPath) as? OnboardingCell else {
             return UICollectionViewCell()
         }
-
         cell.updateOnboardingCell(data: viewModel.dataForItems(at: indexPath))
         return cell
     }
 
-    func scrollViewDidScroll(_ scrollView: UIScrollView) { // chạy nut theo page
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offSet = scrollView.contentOffset.x
         let width = scrollView.frame.width
         let horizontalCenter = width / 2
