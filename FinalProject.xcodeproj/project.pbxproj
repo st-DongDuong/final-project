@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		DE3D49CE2882AE410036C886 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49CC2882AE410036C886 /* OnboardingViewController.swift */; };
 		DE3D49CF2882AE410036C886 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49CD2882AE410036C886 /* OnboardingViewController.xib */; };
-		DE3D49D22882B41E0036C886 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49D12882B41E0036C886 /* OnboardingViewController.swift */; };
-		DE3D49D42882B42E0036C886 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49D32882B42E0036C886 /* OnboardingView.xib */; };
 		DE3D49D82882B4AB0036C886 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49D62882B4AB0036C886 /* OnboardingCell.swift */; };
 		DE3D49D92882B4AB0036C886 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */; };
 		DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49DA2882B4E30036C886 /* ParentView.swift */; };
-		DE3D49DD28831F400036C886 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49DC28831F400036C886 /* OnboardingViewModel.swift */; };
+		DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49DE2884FE2A0036C886 /* OnboardingViewModel.swift */; };
 		DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58C52528816AEB005EE090 /* AppDelegate.swift */; };
 		DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE58C52E28816AED005EE090 /* Assets.xcassets */; };
 		DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE58C53028816AED005EE090 /* LaunchScreen.storyboard */; };
@@ -23,12 +21,10 @@
 /* Begin PBXFileReference section */
 		DE3D49CC2882AE410036C886 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DE3D49CD2882AE410036C886 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
-		DE3D49D12882B41E0036C886 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		DE3D49D32882B42E0036C886 /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
 		DE3D49D62882B4AB0036C886 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
 		DE3D49DA2882B4E30036C886 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
-		DE3D49DC28831F400036C886 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		DE3D49DE2884FE2A0036C886 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		DE58C52228816AEB005EE090 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE58C52528816AEB005EE090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE58C52E28816AED005EE090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3D49CC2882AE410036C886 /* OnboardingViewController.swift */,
+				DE3D49DE2884FE2A0036C886 /* OnboardingViewModel.swift */,
 				DE3D49CD2882AE410036C886 /* OnboardingViewController.xib */,
 				DE3D49D02882B3E60036C886 /* OnboardingView */,
 			);
@@ -60,9 +57,6 @@
 		DE3D49D02882B3E60036C886 /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
-				DE3D49D12882B41E0036C886 /* OnboardingViewController.swift */,
-				DE3D49DC28831F400036C886 /* OnboardingViewModel.swift */,
-				DE3D49D32882B42E0036C886 /* OnboardingView.xib */,
 				DE3D49D52882B4660036C886 /* OnboardingCells */,
 			);
 			path = OnboardingView;
@@ -166,7 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */,
-				DE3D49D42882B42E0036C886 /* OnboardingView.xib in Resources */,
 				DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */,
 				DE3D49D92882B4AB0036C886 /* OnboardingCell.xib in Resources */,
 				DE3D49CF2882AE410036C886 /* OnboardingViewController.xib in Resources */,
@@ -202,10 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3D49D82882B4AB0036C886 /* OnboardingCell.swift in Sources */,
-				DE3D49D22882B41E0036C886 /* OnboardingViewController.swift in Sources */,
 				DE3D49CE2882AE410036C886 /* OnboardingViewController.swift in Sources */,
 				DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */,
-				DE3D49DD28831F400036C886 /* OnboardingViewModel.swift in Sources */,
+				DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */,
 				DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BHH4CJF3QU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -359,6 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Developer-final-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -373,6 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BHH4CJF3QU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -385,6 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Developer-final-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
