@@ -6,8 +6,7 @@
 //
 
 import UIKit
-
-class OnboardingCell: UICollectionViewCell {
+final class OnboardingCell: UICollectionViewCell {
 
     @IBOutlet weak var descriptLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
