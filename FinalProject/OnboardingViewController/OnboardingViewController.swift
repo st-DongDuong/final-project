@@ -6,7 +6,9 @@
 //
 
 import UIKit
+
 final class OnboardingViewController: UIViewController {
+
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var pageControl: UIPageControl!
     var viewModel: OnboardingViewModel = OnboardingViewModel()
@@ -17,11 +19,13 @@ final class OnboardingViewController: UIViewController {
         configureCollection()
         setupPageControl()
     }
+
     private func setupPageControl() {
         pageControl.numberOfPages = viewModel.numberPage()
         pageControl.currentPageIndicatorTintColor = .green
         pageControl.pageIndicatorTintColor = UIColor.lightGray.withAlphaComponent(2)
     }
+
      @IBAction func nextButton(_ sender: Any) {
         guard var currentIndex = collectionView.indexPathsForVisibleItems.first else { return }
         print(currentIndex)
@@ -32,10 +36,12 @@ final class OnboardingViewController: UIViewController {
             }
         }
     }
+
      @IBAction private func skipButtonTouchUpInside(_ sender: Any) {
-        // TODO: Move register
+         #warning("Move to register later")
     }
-    func configureCollection() {
+
+    private func configureCollection() {
         let cellNib = UINib(nibName: "OnboardingCell", bundle: nil)
         collectionView.register(cellNib, forCellWithReuseIdentifier: "OnboardingCell")
         collectionView.dataSource = self
@@ -43,19 +49,23 @@ final class OnboardingViewController: UIViewController {
         collectionView.isPagingEnabled = true
     }
 }
+
 extension OnboardingViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         3
     }
+
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCell",
                                                             for: indexPath) as? OnboardingCell else {
             return UICollectionViewCell()
         }
+
         cell.updateOnboardingCell(data: viewModel.dataForItems(at: indexPath))
         return cell
     }
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) { // chạy nut theo page
         let offSet = scrollView.contentOffset.x
         let width = scrollView.frame.width
@@ -70,11 +80,13 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
     }
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {

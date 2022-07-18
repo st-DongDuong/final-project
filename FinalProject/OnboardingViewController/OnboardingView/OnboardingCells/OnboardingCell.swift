@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 final class OnboardingCell: UICollectionViewCell {
 
     @IBOutlet private weak var descriptLabel: UILabel!

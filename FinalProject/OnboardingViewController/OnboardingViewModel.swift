@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
+
 final class OnboardingViewModel {
+
     var onboardata: [Onboardatas] =
     [
     Onboardatas(imageOnboard: UIImage(named: "img-onboarding-first"),
@@ -28,9 +30,11 @@ extension OnboardingViewModel {
     func numberOfSection() -> Int {
         1
     }
+
     func numberPage() -> Int {
         return onboardata.count
     }
+
     func dataForItems(at indexPath: IndexPath) -> OnboardingCellData {
         let item = onboardata[indexPath.item]
         return OnboardingCellData(imageCell: item.imageOnboard, title: item.title, descript: item.discript)
