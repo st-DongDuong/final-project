@@ -6,9 +6,9 @@
 //
 
 import UIKit
-class OnboardingViewController: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var pageControl: UIPageControl!
+final class OnboardingViewController: UIViewController {
+    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private weak var pageControl: UIPageControl!
     var viewModel: OnboardingViewModel = OnboardingViewModel()
     var indexNumber: Int = 1
 
@@ -22,17 +22,17 @@ class OnboardingViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = .green
         pageControl.pageIndicatorTintColor = UIColor.lightGray.withAlphaComponent(2)
     }
-    @IBAction func nextButton(_ sender: Any) {
+     @IBAction func nextButton(_ sender: Any) {
         guard var currentIndex = collectionView.indexPathsForVisibleItems.first else { return }
         print(currentIndex)
         currentIndex.item += 1 // tn
-        if currentIndex.item  < viewModel.numberPage() { // khi < số lương page
+        if currentIndex.item  < viewModel.numberPage() {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 self.collectionView.scrollToItem(at: currentIndex, at: .centeredHorizontally, animated: true)
             }
         }
     }
-    @IBAction func skipButtonTouchUpInside(_ sender: Any) {
+     @IBAction private func skipButtonTouchUpInside(_ sender: Any) {
         // TODO: Move register
     }
     func configureCollection() {
