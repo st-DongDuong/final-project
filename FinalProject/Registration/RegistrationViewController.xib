@@ -56,6 +56,9 @@
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
+                    <connections>
+                        <action selector="createButton:" destination="-1" eventType="touchUpInside" id="nxn-qW-WQh"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-83-Yoz">
                     <rect key="frame" x="81.5" y="697" width="256" height="49"/>
@@ -67,6 +70,9 @@
                     <color key="tintColor" red="0.062745098039215685" green="0.72549019607843135" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Login "/>
+                    <connections>
+                        <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="MZc-zT-Q2W"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By logging in or registering, you have agreed to the Terms and Conditions and Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud8-Fo-uSD">
                     <rect key="frame" x="49.5" y="762" width="320" height="24"/>

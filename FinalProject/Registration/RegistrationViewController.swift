@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class RegistrationViewController: UIViewController {
 
     @IBOutlet private weak var loginButton: UIButton!
@@ -24,5 +23,13 @@ class RegistrationViewController: UIViewController {
         loginButton.clipsToBounds = true
         createButton.layer.cornerRadius = 12
         createButton.clipsToBounds = true
+    }
+
+    @IBAction func createButton(_ sender: Any) {
+
+    }
+
+    @IBAction func loginButton(_ sender: Any) {
+    
     }
 }
