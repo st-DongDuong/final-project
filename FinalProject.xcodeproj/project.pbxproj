@@ -17,6 +17,7 @@
 		DE3D49EB28854AAB0036C886 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49E928854AAB0036C886 /* RegistrationViewController.xib */; };
 		DE3D49EF288645CF0036C886 /* RegistrationAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */; };
 		DE3D49F0288645CF0036C886 /* RegistrationAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */; };
+		DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */; };
 		DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58C52528816AEB005EE090 /* AppDelegate.swift */; };
 		DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE58C52E28816AED005EE090 /* Assets.xcassets */; };
 		DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE58C53028816AED005EE090 /* LaunchScreen.storyboard */; };
@@ -33,6 +34,7 @@
 		DE3D49E928854AAB0036C886 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewController.swift; sourceTree = "<group>"; };
 		DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationAccountViewController.xib; sourceTree = "<group>"; };
+		DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewModel.swift; sourceTree = "<group>"; };
 		DE58C52228816AEB005EE090 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE58C52528816AEB005EE090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE58C52E28816AED005EE090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */,
+				DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */,
 				DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */,
 			);
 			path = RegistrationAccout;
@@ -229,6 +232,7 @@
 				DE3D49D82882B4AB0036C886 /* OnboardingCell.swift in Sources */,
 				DE3D49CE2882AE410036C886 /* OnboardingViewController.swift in Sources */,
 				DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */,
+				DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */,
 				DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */,
 				DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */,
 			);

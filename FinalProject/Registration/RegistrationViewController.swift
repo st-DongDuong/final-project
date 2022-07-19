@@ -13,23 +13,27 @@ class RegistrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
         navigationController?.isNavigationBarHidden = true
-
+        configureView()
     }
 
     private func configureView() {
         loginButton.layer.cornerRadius = 12
-        loginButton.clipsToBounds = true
         createButton.layer.cornerRadius = 12
-        createButton.clipsToBounds = true
+
     }
 
     @IBAction func createButton(_ sender: Any) {
-
+        let createVC = RegistrationAccountViewController(status: .createAccount)
+        navigationController?.pushViewController(createVC, animated: true)
     }
 
     @IBAction func loginButton(_ sender: Any) {
-    
+        let loginVC = RegistrationAccountViewController(status: .login)
+        if let sheet = loginVC.sheetPresentationController {
+            sheet.detents = [ .medium() ] // present lên nửa or full
+        }
+
+        self.present(loginVC, animated: true, completion: nil)
     }
 }
