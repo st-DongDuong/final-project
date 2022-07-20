@@ -41,7 +41,7 @@
                                 <color key="titleColor" red="0.1960784314" green="0.71764705880000002" blue="0.40784313729999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <action selector="createAccountButton:" destination="-1" eventType="touchUpInside" id="O6F-o4-jcH"/>
+                                <action selector="createAccountPage:" destination="-1" eventType="touchUpInside" id="SNi-vX-Upc"/>
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgn-eK-f8j" userLabel="LineAccount">
@@ -73,7 +73,7 @@
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Login"/>
                             <connections>
-                                <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="EgW-ir-EOA"/>
+                                <action selector="loginPage:" destination="-1" eventType="touchUpInside" id="zAw-DE-jyj"/>
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hce-eb-5p6" userLabel="LineLogin">
@@ -103,6 +103,9 @@
                     <color key="tintColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Registration"/>
+                    <connections>
+                        <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="NK1-LA-Bhw"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-0q-B1S" userLabel="LineView">
                     <rect key="frame" x="133" y="600" width="148" height="2"/>
@@ -186,7 +189,7 @@
                                         <constraint firstAttribute="height" constant="36" id="jCs-uN-Ryh"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" smartDashesType="no" smartInsertDeleteType="no"/>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -13,9 +13,8 @@ class RegistrationAccountViewController: UIViewController {
         case login
     }
 
-    var change = RegistrationAccountViewModel(type: .createAccount)
     var statusView: StatusView = .login
-    var viewModel: RegistrationAccountViewModel = RegistrationAccountViewModel(type: .createAccount)
+    var viewModel: RegistrationAccountViewModel = RegistrationAccountViewModel(type: .createAccount, listAccount: [])
 
     convenience init(status: StatusView) {
         self.init(nibName: nil, bundle: nil)
@@ -100,7 +99,7 @@ class RegistrationAccountViewController: UIViewController {
     }
 
     func updateRegisterButton() {
-        if viewModel.isValid {
+        if viewModel.isValidRegister {
             registerButton.isEnabled = true
             registerButton.backgroundColor = UIColor(red: 0.196, green: 0.718, blue: 0.408, alpha: 1)
             registerButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
@@ -113,11 +112,18 @@ class RegistrationAccountViewController: UIViewController {
         }
     }
 
-    @IBAction func createAccountButton(_ sender: Any) {
+    @IBAction func createAccountPage(_ sender: Any) {
         updateView(status: .createAccount)
     }
 
-    @IBAction func loginButton(_ sender: Any) {
+    @IBAction func loginPage(_ sender: Any) {
         updateView(status: .login)
+    }
+
+    @IBAction func loginButton(_ sender: Any) {
+        if viewModel.isValidLogin {
+        let registerVC = RegistrationViewController()
+            navigationController?.pushViewController(registerVC, animated: true)
+        }
     }
 }

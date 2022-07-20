@@ -31,7 +31,7 @@ class RegistrationViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         let loginVC = RegistrationAccountViewController(status: .login)
         if let sheet = loginVC.sheetPresentationController {
-            sheet.detents = [ .medium() ] // present lên nửa or full
+            sheet.detents = [.large() ] // present lên nửa or full
         }
 
         self.present(loginVC, animated: true, completion: nil)

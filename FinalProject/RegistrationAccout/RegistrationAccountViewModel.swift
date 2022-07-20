@@ -9,23 +9,38 @@ import Foundation
 import UIKit
 
 final class RegistrationAccountViewModel {
+
     private var fullname: String = ""
     private var email: String = ""
     private var password: String = ""
+    var type: ColorChange
+
+    var listAccount: [Account] = []
 
     enum ColorChange {
         case createAccount
         case login
     }
 
-    var type: ColorChange
-    var isValid: Bool {
+    var isValidRegister: Bool {
         return !fullname.isEmpty && !email.isEmpty  && !password.isEmpty
     }
 
-    init(type: ColorChange) {
-        self.type = type
+    var isValidLogin: Bool {
+        return !email.isEmpty  && !password.isEmpty
     }
+
+    init(type: ColorChange, listAccount: [Account] ) {
+        self.type = type
+        self.listAccount =
+                [
+                    Account(email: "dong123@gmail.com", password: "123123"),
+                    Account(email: "dong123123@gmail.com", password: "123123123")
+                ]
+    }
+}
+
+extension RegistrationAccountViewModel {
 
     func updateFullName(fullName: String) {
         self.fullname = fullName
@@ -38,4 +53,19 @@ final class RegistrationAccountViewModel {
     func updatePassword(password: String) {
         self.password = password
     }
+
+    func loginCheck() -> Bool {
+        for account in listAccount {
+            if account.email == email && account.password == password && password.count >= 6 {
+                self.fullname = email
+                return true
+            }
+        }
+        return false
+    }
+}
+
+struct Account {
+    var email: String
+    var password: String
 }
