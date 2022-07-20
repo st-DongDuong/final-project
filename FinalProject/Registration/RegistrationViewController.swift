@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+final class RegistrationViewController: UIViewController {
 
     @IBOutlet private weak var loginButton: UIButton!
     @IBOutlet private weak var createButton: UIButton!
@@ -16,7 +16,6 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
         configureView()
         navigationController?.isNavigationBarHidden = true
-
     }
 
     private func configureView() {
