@@ -15,7 +15,8 @@ final class OnboardingViewModel {
     Onboardatas(imageOnboard: UIImage(named: "img-onboarding-first"),
                 title: "Nearby restaurants",
                 discript: """
-                You don't have to go far to find a good restaurant, we have provided all the restaurants that is near you
+                You don't have to go far to find a good restaurant,
+                we have provided all the restaurants that is near you
                 """),
     Onboardatas(imageOnboard: UIImage(named: "img-onboarding-second"),
                 title: "Select the Favorites Menu",
