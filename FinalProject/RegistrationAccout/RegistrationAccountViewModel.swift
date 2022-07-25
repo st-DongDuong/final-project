@@ -23,7 +23,7 @@ final class RegistrationAccountViewModel {
     }
 
     var isValidRegister: Bool {
-        return !fullname.isEmpty && !email.isEmpty  && !password.isEmpty
+        return !fullname.isEmpty && !email.isEmpty  && !password.isEmpty && fullname.isValidEmail()
     }
 
     var isValidLogin: Bool {
@@ -41,7 +41,6 @@ final class RegistrationAccountViewModel {
 }
 
 extension RegistrationAccountViewModel {
-
     func updateFullName(fullName: String) {
         self.fullname = fullName
     }
@@ -56,25 +55,16 @@ extension RegistrationAccountViewModel {
 
     func loginCheck() -> Bool {
         for account in listAccount {
-        if account.email == email && account.password == password && password.count >= 6 && email.isValidEmail(email) {
+        if account.email == email && account.password == password && password.count >= 6 && email.isValidEmail() {
                 self.fullname = email
                 return true
             }
         }
         return false
     }
-
 }
 
 struct Account {
     var email: String
     var password: String
-}
-
-extension String {
-    func isValidEmail(_ email: String) -> Bool {
-               let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-               let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
-               return emailPred.evaluate(with: email)
-    }
 }

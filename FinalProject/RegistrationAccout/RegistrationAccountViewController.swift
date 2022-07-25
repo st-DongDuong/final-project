@@ -8,9 +8,9 @@ import UIKit
 
 final class RegistrationAccountViewController: UIViewController {
 
-    enum StatusView {
-        case createAccount
-        case login
+    enum StatusView: Int {
+        case createAccount = 0
+        case login = 1
     }
 
     var statusView: StatusView = .createAccount
@@ -20,7 +20,7 @@ final class RegistrationAccountViewController: UIViewController {
         self.init(nibName: nil, bundle: nil)
         self.statusView = status
     }
-
+    @IBOutlet weak var forgotButton: UIStackView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var forgotPassword: UIButton!
@@ -132,26 +132,27 @@ final class RegistrationAccountViewController: UIViewController {
         }
     }
 
-    @IBAction func createAccountPage(_ sender: Any) {
-        statusView = .createAccount
+    @IBAction func loginPage(_ sender: UIButton) {
+        let tag = sender.tag
+        statusView = StatusView(rawValue: tag) ?? .createAccount
         updateView()
     }
 
-    @IBAction func loginPage(_ sender: Any) {
-        statusView = .login
-        updateView()
+    @IBAction func forgotButton(_ sender: Any) {
+        let forgotPassVC = ForgetPasswordViewController()
+        present(forgotPassVC, animated: true, completion: .none)
+
     }
 
     @IBAction func loginButton(_ sender: Any) {
         switch statusView {
         case .createAccount:
             if viewModel.isValidRegister {
-
+                print("1")
             }
 
         case .login:
-            if viewModel.loginCheck() {
-            print("2")
+            if viewModel.isValidLogin {
             }
         }
     }
