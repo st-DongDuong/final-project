@@ -18,6 +18,10 @@
 		DE3D49EF288645CF0036C886 /* RegistrationAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */; };
 		DE3D49F0288645CF0036C886 /* RegistrationAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */; };
 		DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */; };
+		DE583D72288A64CF00BE534D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D70288A64CF00BE534D /* ForgetPasswordViewController.swift */; };
+		DE583D73288A64CF00BE534D /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE583D71288A64CF00BE534D /* ForgetPasswordViewController.xib */; };
+		DE583D75288A83EE00BE534D /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D74288A83EE00BE534D /* ForgetPasswordViewModel.swift */; };
+		DE583D78288A96E300BE534D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D77288A96E300BE534D /* Extension.swift */; };
 		DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58C52528816AEB005EE090 /* AppDelegate.swift */; };
 		DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE58C52E28816AED005EE090 /* Assets.xcassets */; };
 		DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE58C53028816AED005EE090 /* LaunchScreen.storyboard */; };
@@ -35,6 +39,10 @@
 		DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewController.swift; sourceTree = "<group>"; };
 		DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationAccountViewController.xib; sourceTree = "<group>"; };
 		DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewModel.swift; sourceTree = "<group>"; };
+		DE583D70288A64CF00BE534D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		DE583D71288A64CF00BE534D /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		DE583D74288A83EE00BE534D /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		DE583D77288A96E300BE534D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DE58C52228816AEB005EE090 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE58C52528816AEB005EE090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE58C52E28816AED005EE090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,13 +89,13 @@
 			path = OnboardingCells;
 			sourceTree = "<group>";
 		};
-		DE3D49E728854A800036C886 /* Registration */ = {
+		DE3D49E728854A800036C886 /* RegistrationHome */ = {
 			isa = PBXGroup;
 			children = (
 				DE3D49E828854AAB0036C886 /* RegistrationViewController.swift */,
 				DE3D49E928854AAB0036C886 /* RegistrationViewController.xib */,
 			);
-			path = Registration;
+			path = RegistrationHome;
 			sourceTree = "<group>";
 		};
 		DE3D49EC288644C50036C886 /* RegistrationAccout */ = {
@@ -98,6 +106,24 @@
 				DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */,
 			);
 			path = RegistrationAccout;
+			sourceTree = "<group>";
+		};
+		DE583D6F288A648300BE534D /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				DE583D70288A64CF00BE534D /* ForgetPasswordViewController.swift */,
+				DE583D74288A83EE00BE534D /* ForgetPasswordViewModel.swift */,
+				DE583D71288A64CF00BE534D /* ForgetPasswordViewController.xib */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		DE583D76288A96D400BE534D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE583D77288A96E300BE534D /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		DE58C51928816AEB005EE090 = {
@@ -119,8 +145,10 @@
 		DE58C52428816AEB005EE090 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				DE583D76288A96D400BE534D /* Extension */,
+				DE583D6F288A648300BE534D /* ForgetPassword */,
 				DE3D49EC288644C50036C886 /* RegistrationAccout */,
-				DE3D49E728854A800036C886 /* Registration */,
+				DE3D49E728854A800036C886 /* RegistrationHome */,
 				DE3D49CB2882AE160036C886 /* Onboarding */,
 				DE58C52528816AEB005EE090 /* AppDelegate.swift */,
 				DE3D49DA2882B4E30036C886 /* ParentView.swift */,
@@ -190,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE583D73288A64CF00BE534D /* ForgetPasswordViewController.xib in Resources */,
 				DE3D49EB28854AAB0036C886 /* RegistrationViewController.xib in Resources */,
 				DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */,
 				DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */,
@@ -228,9 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3D49EA28854AAB0036C886 /* RegistrationViewController.swift in Sources */,
+				DE583D78288A96E300BE534D /* Extension.swift in Sources */,
 				DE3D49EF288645CF0036C886 /* RegistrationAccountViewController.swift in Sources */,
 				DE3D49D82882B4AB0036C886 /* OnboardingCell.swift in Sources */,
 				DE3D49CE2882AE410036C886 /* OnboardingViewController.swift in Sources */,
+				DE583D72288A64CF00BE534D /* ForgetPasswordViewController.swift in Sources */,
+				DE583D75288A83EE00BE534D /* ForgetPasswordViewModel.swift in Sources */,
 				DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */,
 				DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */,
 				DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */,
