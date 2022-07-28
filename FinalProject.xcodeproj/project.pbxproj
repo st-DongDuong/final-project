@@ -11,8 +11,24 @@
 		DE3D49CF2882AE410036C886 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49CD2882AE410036C886 /* OnboardingViewController.xib */; };
 		DE3D49D82882B4AB0036C886 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49D62882B4AB0036C886 /* OnboardingCell.swift */; };
 		DE3D49D92882B4AB0036C886 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */; };
-		DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49DA2882B4E30036C886 /* ParentView.swift */; };
 		DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49DE2884FE2A0036C886 /* OnboardingViewModel.swift */; };
+		DE3D49EF288645CF0036C886 /* RegistrationAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */; };
+		DE3D49F0288645CF0036C886 /* RegistrationAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */; };
+		DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */; };
+		DE583D72288A64CF00BE534D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D70288A64CF00BE534D /* ForgetPasswordViewController.swift */; };
+		DE583D73288A64CF00BE534D /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE583D71288A64CF00BE534D /* ForgetPasswordViewController.xib */; };
+		DE583D75288A83EE00BE534D /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D74288A83EE00BE534D /* ForgetPasswordViewModel.swift */; };
+		DE583D78288A96E300BE534D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D77288A96E300BE534D /* Extension.swift */; };
+		DE583D7C288E48D100BE534D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D7A288E48D100BE534D /* NotificationViewController.swift */; };
+		DE583D7D288E48D100BE534D /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE583D7B288E48D100BE534D /* NotificationViewController.xib */; };
+		DE583D7F288E4EC800BE534D /* NotificateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D7E288E4EC800BE534D /* NotificateViewModel.swift */; };
+		DE583D82288E528F00BE534D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D80288E528F00BE534D /* RegistrationViewController.swift */; };
+		DE583D83288E528F00BE534D /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE583D81288E528F00BE534D /* RegistrationViewController.xib */; };
+		DE583D87288E71E300BE534D /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D85288E71E300BE534D /* ChangePasswordViewController.swift */; };
+		DE583D88288E71E300BE534D /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE583D86288E71E300BE534D /* ChangePasswordViewController.xib */; };
+		DE583D8A288E744800BE534D /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D89288E744800BE534D /* ChangePasswordViewModel.swift */; };
+		DE583D8C288F7EA200BE534D /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D8B288F7EA200BE534D /* UserDataStore.swift */; };
+		DE583D8E288F7EAF00BE534D /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE583D8D288F7EAF00BE534D /* UserDefault.swift */; };
 		DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58C52528816AEB005EE090 /* AppDelegate.swift */; };
 		DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE58C52E28816AED005EE090 /* Assets.xcassets */; };
 		DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE58C53028816AED005EE090 /* LaunchScreen.storyboard */; };
@@ -23,8 +39,24 @@
 		DE3D49CD2882AE410036C886 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		DE3D49D62882B4AB0036C886 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
-		DE3D49DA2882B4E30036C886 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		DE3D49DE2884FE2A0036C886 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewController.swift; sourceTree = "<group>"; };
+		DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationAccountViewController.xib; sourceTree = "<group>"; };
+		DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewModel.swift; sourceTree = "<group>"; };
+		DE583D70288A64CF00BE534D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		DE583D71288A64CF00BE534D /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		DE583D74288A83EE00BE534D /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		DE583D77288A96E300BE534D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DE583D7A288E48D100BE534D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		DE583D7B288E48D100BE534D /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		DE583D7E288E4EC800BE534D /* NotificateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificateViewModel.swift; sourceTree = "<group>"; };
+		DE583D80288E528F00BE534D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = FinalProject/Registration/RegistrationViewController.swift; sourceTree = SOURCE_ROOT; };
+		DE583D81288E528F00BE534D /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegistrationViewController.xib; path = FinalProject/Registration/RegistrationViewController.xib; sourceTree = SOURCE_ROOT; };
+		DE583D85288E71E300BE534D /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		DE583D86288E71E300BE534D /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		DE583D89288E744800BE534D /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		DE583D8B288F7EA200BE534D /* UserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
+		DE583D8D288F7EAF00BE534D /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		DE58C52228816AEB005EE090 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE58C52528816AEB005EE090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE58C52E28816AED005EE090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +75,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE3D49CB2882AE160036C886 /* OnboardingViewController */ = {
+		DE3D49CB2882AE160036C886 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				DE3D49CC2882AE410036C886 /* OnboardingViewController.swift */,
@@ -51,7 +83,7 @@
 				DE3D49CD2882AE410036C886 /* OnboardingViewController.xib */,
 				DE3D49D02882B3E60036C886 /* OnboardingView */,
 			);
-			path = OnboardingViewController;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		DE3D49D02882B3E60036C886 /* OnboardingView */ = {
@@ -69,6 +101,65 @@
 				DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */,
 			);
 			path = OnboardingCells;
+			sourceTree = "<group>";
+		};
+		DE3D49E728854A800036C886 /* RegistrationHome */ = {
+			isa = PBXGroup;
+			children = (
+				DE583D80288E528F00BE534D /* RegistrationViewController.swift */,
+				DE583D81288E528F00BE534D /* RegistrationViewController.xib */,
+			);
+			path = RegistrationHome;
+			sourceTree = "<group>";
+		};
+		DE3D49EC288644C50036C886 /* RegistrationAccout */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */,
+				DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */,
+				DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */,
+			);
+			path = RegistrationAccout;
+			sourceTree = "<group>";
+		};
+		DE583D6F288A648300BE534D /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				DE583D84288E71C100BE534D /* ChangePassword */,
+				DE583D79288E482B00BE534D /* Notification */,
+				DE583D70288A64CF00BE534D /* ForgetPasswordViewController.swift */,
+				DE583D74288A83EE00BE534D /* ForgetPasswordViewModel.swift */,
+				DE583D71288A64CF00BE534D /* ForgetPasswordViewController.xib */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		DE583D76288A96D400BE534D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE583D77288A96E300BE534D /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE583D79288E482B00BE534D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				DE583D7A288E48D100BE534D /* NotificationViewController.swift */,
+				DE583D7E288E4EC800BE534D /* NotificateViewModel.swift */,
+				DE583D7B288E48D100BE534D /* NotificationViewController.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		DE583D84288E71C100BE534D /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				DE583D85288E71E300BE534D /* ChangePasswordViewController.swift */,
+				DE583D89288E744800BE534D /* ChangePasswordViewModel.swift */,
+				DE583D86288E71E300BE534D /* ChangePasswordViewController.xib */,
+			);
+			path = ChangePassword;
 			sourceTree = "<group>";
 		};
 		DE58C51928816AEB005EE090 = {
@@ -90,9 +181,14 @@
 		DE58C52428816AEB005EE090 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				DE3D49CB2882AE160036C886 /* OnboardingViewController */,
+				DE583D76288A96D400BE534D /* Extension */,
+				DE583D6F288A648300BE534D /* ForgetPassword */,
+				DE3D49EC288644C50036C886 /* RegistrationAccout */,
+				DE3D49E728854A800036C886 /* RegistrationHome */,
+				DE3D49CB2882AE160036C886 /* Onboarding */,
 				DE58C52528816AEB005EE090 /* AppDelegate.swift */,
-				DE3D49DA2882B4E30036C886 /* ParentView.swift */,
+				DE583D8B288F7EA200BE534D /* UserDataStore.swift */,
+				DE583D8D288F7EAF00BE534D /* UserDefault.swift */,
 				DE58C52E28816AED005EE090 /* Assets.xcassets */,
 				DE58C53028816AED005EE090 /* LaunchScreen.storyboard */,
 				DE58C53328816AED005EE090 /* Info.plist */,
@@ -159,10 +255,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE583D73288A64CF00BE534D /* ForgetPasswordViewController.xib in Resources */,
 				DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */,
+				DE583D83288E528F00BE534D /* RegistrationViewController.xib in Resources */,
 				DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */,
 				DE3D49D92882B4AB0036C886 /* OnboardingCell.xib in Resources */,
+				DE583D7D288E48D100BE534D /* NotificationViewController.xib in Resources */,
 				DE3D49CF2882AE410036C886 /* OnboardingViewController.xib in Resources */,
+				DE583D88288E71E300BE534D /* ChangePasswordViewController.xib in Resources */,
+				DE3D49F0288645CF0036C886 /* RegistrationAccountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,11 +295,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE583D8E288F7EAF00BE534D /* UserDefault.swift in Sources */,
+				DE583D78288A96E300BE534D /* Extension.swift in Sources */,
+				DE583D7C288E48D100BE534D /* NotificationViewController.swift in Sources */,
+				DE3D49EF288645CF0036C886 /* RegistrationAccountViewController.swift in Sources */,
+				DE583D82288E528F00BE534D /* RegistrationViewController.swift in Sources */,
 				DE3D49D82882B4AB0036C886 /* OnboardingCell.swift in Sources */,
 				DE3D49CE2882AE410036C886 /* OnboardingViewController.swift in Sources */,
-				DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */,
+				DE583D72288A64CF00BE534D /* ForgetPasswordViewController.swift in Sources */,
+				DE583D75288A83EE00BE534D /* ForgetPasswordViewModel.swift in Sources */,
+				DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */,
+				DE583D8A288E744800BE534D /* ChangePasswordViewModel.swift in Sources */,
 				DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */,
 				DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */,
+				DE583D8C288F7EA200BE534D /* UserDataStore.swift in Sources */,
+				DE583D7F288E4EC800BE534D /* NotificateViewModel.swift in Sources */,
+				DE583D87288E71E300BE534D /* ChangePasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
