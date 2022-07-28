@@ -13,9 +13,14 @@
 		DE3D49D92882B4AB0036C886 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */; };
 		DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49DA2882B4E30036C886 /* ParentView.swift */; };
 		DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49DE2884FE2A0036C886 /* OnboardingViewModel.swift */; };
+		DE3D49EF288645CF0036C886 /* RegistrationAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */; };
+		DE3D49F0288645CF0036C886 /* RegistrationAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */; };
+		DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */; };
 		DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58C52528816AEB005EE090 /* AppDelegate.swift */; };
 		DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE58C52E28816AED005EE090 /* Assets.xcassets */; };
 		DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE58C53028816AED005EE090 /* LaunchScreen.storyboard */; };
+		DE7877A728922DE500AA920C /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7877A528922DE500AA920C /* RegistrationViewController.xib */; };
+		DE7877A828922DE500AA920C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7877A628922DE500AA920C /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +30,16 @@
 		DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
 		DE3D49DA2882B4E30036C886 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		DE3D49DE2884FE2A0036C886 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewController.swift; sourceTree = "<group>"; };
+		DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationAccountViewController.xib; sourceTree = "<group>"; };
+		DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAccountViewModel.swift; sourceTree = "<group>"; };
 		DE58C52228816AEB005EE090 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE58C52528816AEB005EE090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE58C52E28816AED005EE090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE58C53128816AED005EE090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE58C53328816AED005EE090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7877A528922DE500AA920C /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		DE7877A628922DE500AA920C /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +53,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE3D49CB2882AE160036C886 /* OnboardingViewController */ = {
+		DE3D49CB2882AE160036C886 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				DE3D49CC2882AE410036C886 /* OnboardingViewController.swift */,
@@ -51,7 +61,7 @@
 				DE3D49CD2882AE410036C886 /* OnboardingViewController.xib */,
 				DE3D49D02882B3E60036C886 /* OnboardingView */,
 			);
-			path = OnboardingViewController;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		DE3D49D02882B3E60036C886 /* OnboardingView */ = {
@@ -69,6 +79,16 @@
 				DE3D49D72882B4AB0036C886 /* OnboardingCell.xib */,
 			);
 			path = OnboardingCells;
+			sourceTree = "<group>";
+		};
+		DE3D49EC288644C50036C886 /* RegistrationAccout */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D49ED288645CF0036C886 /* RegistrationAccountViewController.swift */,
+				DE3D49F128865AC90036C886 /* RegistrationAccountViewModel.swift */,
+				DE3D49EE288645CF0036C886 /* RegistrationAccountViewController.xib */,
+			);
+			path = RegistrationAccout;
 			sourceTree = "<group>";
 		};
 		DE58C51928816AEB005EE090 = {
@@ -90,14 +110,25 @@
 		DE58C52428816AEB005EE090 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				DE3D49CB2882AE160036C886 /* OnboardingViewController */,
 				DE58C52528816AEB005EE090 /* AppDelegate.swift */,
-				DE3D49DA2882B4E30036C886 /* ParentView.swift */,
 				DE58C52E28816AED005EE090 /* Assets.xcassets */,
-				DE58C53028816AED005EE090 /* LaunchScreen.storyboard */,
 				DE58C53328816AED005EE090 /* Info.plist */,
+				DE58C53028816AED005EE090 /* LaunchScreen.storyboard */,
+				DE3D49CB2882AE160036C886 /* Onboarding */,
+				DE3D49DA2882B4E30036C886 /* ParentView.swift */,
+				DE7877A428922DE500AA920C /* Registration */,
+				DE3D49EC288644C50036C886 /* RegistrationAccout */,
 			);
 			path = FinalProject;
+			sourceTree = "<group>";
+		};
+		DE7877A428922DE500AA920C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				DE7877A628922DE500AA920C /* RegistrationViewController.swift */,
+				DE7877A528922DE500AA920C /* RegistrationViewController.xib */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +193,9 @@
 				DE58C53228816AED005EE090 /* LaunchScreen.storyboard in Resources */,
 				DE58C52F28816AED005EE090 /* Assets.xcassets in Resources */,
 				DE3D49D92882B4AB0036C886 /* OnboardingCell.xib in Resources */,
+				DE7877A728922DE500AA920C /* RegistrationViewController.xib in Resources */,
 				DE3D49CF2882AE410036C886 /* OnboardingViewController.xib in Resources */,
+				DE3D49F0288645CF0036C886 /* RegistrationAccountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,9 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3D49EF288645CF0036C886 /* RegistrationAccountViewController.swift in Sources */,
 				DE3D49D82882B4AB0036C886 /* OnboardingCell.swift in Sources */,
+				DE7877A828922DE500AA920C /* RegistrationViewController.swift in Sources */,
 				DE3D49CE2882AE410036C886 /* OnboardingViewController.swift in Sources */,
 				DE3D49DB2882B4E30036C886 /* ParentView.swift in Sources */,
+				DE3D49F228865AC90036C886 /* RegistrationAccountViewModel.swift in Sources */,
 				DE3D49DF2884FE2A0036C886 /* OnboardingViewModel.swift in Sources */,
 				DE58C52628816AEB005EE090 /* AppDelegate.swift in Sources */,
 			);
