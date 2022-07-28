@@ -17,6 +17,10 @@ final class ForgetPasswordViewModel {
     func updateEmail(email: String) {
         self.email = email
     }
+
+    func getNewEmail() {
+        UserDataStore.shared.setUser(item: User(fullname: "", email: email, password: ""))
+    }
 }
 
 extension ForgetPasswordViewModel {

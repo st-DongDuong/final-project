@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController" customModule="FinalProject" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Tay-sW-alj" id="VkN-Yw-Quq"/>
+                <outlet property="confirmLabel" destination="orm-Ns-3EQ" id="IJZ-Rh-f4A"/>
+                <outlet property="descriptLabel" destination="rH5-sc-G8C" id="VRa-wk-ITV"/>
+                <outlet property="resubmitButton" destination="STd-nV-5M7" id="n9u-WU-zKF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Success Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zf2-3E-jGf">
+                    <rect key="frame" x="136" y="339" width="142" height="142"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkH-Tz-jPm">
+                    <rect key="frame" x="159.5" y="510" width="95.5" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="1ZS-2X-Btp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your email for create a new password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH5-sc-G8C">
+                    <rect key="frame" x="46" y="554" width="322" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="X5S-lK-s6B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.41960784313725491" green="0.44705882352941173" blue="0.50196078431372548" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can't get email?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orm-Ns-3EQ">
+                    <rect key="frame" x="120" y="624" width="123" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="cG3-E0-PoA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STd-nV-5M7">
+                    <rect key="frame" x="245" y="626" width="69" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Resubmit">
+                        <color key="titleColor" red="0.1960784314" green="0.71764705880000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tay-sW-alj">
+                    <rect key="frame" x="60" y="743" width="295" height="49"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.71764705880000002" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="Y55-kU-Zg7"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Back Email"/>
+                    <connections>
+                        <action selector="backEmailButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="Cii-bk-xpV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Tay-sW-alj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="4Bk-3X-vjd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tay-sW-alj" secondAttribute="trailing" constant="59" id="4Cu-QB-EIh"/>
+                <constraint firstItem="UkH-Tz-jPm" firstAttribute="centerX" secondItem="Zf2-3E-jGf" secondAttribute="centerX" id="6H0-eM-LBC"/>
+                <constraint firstItem="rH5-sc-G8C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="Q4Z-b8-iwA"/>
+                <constraint firstItem="UkH-Tz-jPm" firstAttribute="top" secondItem="Zf2-3E-jGf" secondAttribute="bottom" constant="29" id="Uqx-Hq-H34"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rH5-sc-G8C" secondAttribute="trailing" constant="46" id="VWx-N6-Ajc"/>
+                <constraint firstItem="rH5-sc-G8C" firstAttribute="top" secondItem="UkH-Tz-jPm" secondAttribute="bottom" constant="8" id="Vws-as-PY0"/>
+                <constraint firstItem="STd-nV-5M7" firstAttribute="centerY" secondItem="orm-Ns-3EQ" secondAttribute="centerY" id="cHE-8V-I26"/>
+                <constraint firstItem="rH5-sc-G8C" firstAttribute="centerX" secondItem="UkH-Tz-jPm" secondAttribute="centerX" id="dbk-IA-CVn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="STd-nV-5M7" secondAttribute="trailing" constant="100" id="kqf-LV-HhA"/>
+                <constraint firstItem="Zf2-3E-jGf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="295" id="oTV-HE-T6L"/>
+                <constraint firstItem="orm-Ns-3EQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="rxk-PU-cgG"/>
+                <constraint firstItem="Zf2-3E-jGf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ufh-rn-XLA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Tay-sW-alj" secondAttribute="bottom" constant="70" id="uwU-gm-qwB"/>
+                <constraint firstItem="orm-Ns-3EQ" firstAttribute="top" secondItem="rH5-sc-G8C" secondAttribute="bottom" constant="28" id="zI8-Q5-3Ny"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Success Icon" width="142" height="142"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

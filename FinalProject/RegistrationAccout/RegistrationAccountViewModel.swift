@@ -8,35 +8,31 @@
 import Foundation
 import UIKit
 
+enum StatusView {
+    case createAccount
+    case login
+}
+
 final class RegistrationAccountViewModel {
 
     private var fullname: String = ""
     private var email: String = ""
     private var password: String = ""
 
-    var type: ColorChange
-    var listAccount: [Account] = []
-
-    enum ColorChange {
-        case createAccount
-        case login
-    }
+    var statusView: StatusView
 
     var isValidRegister: Bool {
-        return !fullname.isEmpty && !email.isEmpty  && !password.isEmpty
+        return !fullname.isEmpty && !email.isEmpty  && !password.isEmpty && email.isValidEmail()
     }
 
     var isValidLogin: Bool {
-        return !email.isEmpty  && !password.isEmpty
+        return !email.isEmpty  && !password.isEmpty && email.isValidEmail() && password.count >= 6
     }
 
-    init(type: ColorChange, listAccount: [Account] ) {
-        self.type = type
-        self.listAccount =
-                [
-                    Account(email: "dong123@gmail.com", password: "123123"),
-                    Account(email: "dong123123@gmail.com", password: "123123123")
-                ]
+    init(
+        statusView: StatusView
+    ) {
+        self.statusView = statusView
     }
 }
 
@@ -54,27 +50,16 @@ extension RegistrationAccountViewModel {
         self.password = password
     }
 
-    func loginCheck() -> Bool {
-        for account in listAccount {
-        if account.email == email && account.password == password && password.count >= 6 && email.isValidEmail(email) {
-                self.fullname = email
-                return true
-            }
-        }
-        return false
+    func createUser() {
+        UserDataStore.shared.setUser(item: User.init(fullname: fullname, email: email, password: password ))
     }
 
+    func login() {
+        UserDataStore.shared.login(item: User.init(fullname: fullname, email: email, password: password))
+    }
 }
 
-struct Account {
+struct Account: Codable {
     var email: String
     var password: String
-}
-
-extension String {
-    func isValidEmail(_ email: String) -> Bool {
-               let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-               let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
-               return emailPred.evaluate(with: email)
-    }
 }

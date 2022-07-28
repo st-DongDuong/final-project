@@ -24,18 +24,17 @@ final class RegistrationViewController: UIViewController {
 
     }
 
-    @IBAction func createButton(_ sender: Any) {
-        let createVC = RegistrationAccountViewController(status: .createAccount)
-        navigationController?.pushViewController(createVC, animated: true)
+    @IBAction func createButtonTouchUpInside(_ sender: Any) {
+        let createVC = RegistrationAccountViewController()
+        createVC.viewModel = RegistrationAccountViewModel(statusView: .createAccount)
+//        createVC.modalPresentationStyle = .fullScreen
+        self.present(createVC, animated: true, completion: nil)
     }
 
-    @IBAction func loginButton(_ sender: Any) {
-
-        let loginVC = RegistrationAccountViewController(status: .login)
-//        if let sheet = loginVC.sheetPresentationController  {
-//            sheet.detents = [.medium() ] // present lên nửa or full
-//        }
-
+    @IBAction func loginButtonTouchUpInside(_ sender: Any) {
+        let loginVC = RegistrationAccountViewController()
+        loginVC.viewModel = RegistrationAccountViewModel(statusView: .login)
+//        loginVC.modalPresentationStyle = .
         self.present(loginVC, animated: true, completion: nil)
     }
 }

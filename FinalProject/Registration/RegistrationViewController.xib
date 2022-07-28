@@ -57,7 +57,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
                     <connections>
-                        <action selector="createButton:" destination="-1" eventType="touchUpInside" id="nxn-qW-WQh"/>
+                        <action selector="createButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="oWh-Hi-ZrO"/>
                     </connections>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-83-Yoz">
@@ -71,7 +71,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Login "/>
                     <connections>
-                        <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="MZc-zT-Q2W"/>
+                        <action selector="loginButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="HUl-Kn-Z9K"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By logging in or registering, you have agreed to the Terms and Conditions and Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud8-Fo-uSD">

@@ -11,13 +11,13 @@ final class ForgetPasswordViewController: UIViewController {
 
     var viewModel: ForgetPasswordViewModel = ForgetPasswordViewModel()
 
-    @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet private weak var signInButton: UIButton!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var submitButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange(_:)), for: .editingChanged)
-
     }
 
     @objc func emailTextFieldDidChange(_ textField: UITextField) {
@@ -31,6 +31,7 @@ final class ForgetPasswordViewController: UIViewController {
             submitButton.backgroundColor = UIColor(red: 0.196, green: 0.718, blue: 0.408, alpha: 1)
             submitButton.layer.cornerRadius = 12
             submitButton.clipsToBounds = true
+            viewModel.getNewEmail()
 
         } else {
 
@@ -38,7 +39,9 @@ final class ForgetPasswordViewController: UIViewController {
         }
     }
 
-    @IBAction func submitButton(_ sender: Any) {
+    @IBAction func submitButtonTouchupInsides(_ sender: Any) {
+        let successEmail = NotificationViewController()
+        present(successEmail, animated: true, completion: .none)
         updateSubmitButton()
     }
 
